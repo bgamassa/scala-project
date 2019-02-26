@@ -2,14 +2,15 @@ import Dependencies._
 
 ThisBuild / scalaVersion     := "2.12.8"
 ThisBuild / version          := "0.1.0-SNAPSHOT"
-ThisBuild / organization     := "com.example"
-ThisBuild / organizationName := "example"
+ThisBuild / organization     := "com.json-csv-parser"
+ThisBuild / organizationName := "json-csv-parser"
 
 lazy val root = (project in file("."))
   .settings(
     name := "scala-project",
     libraryDependencies += scalaTest % Test,
-    libraryDependencies += "com.typesafe.play" %% "play-json" % "2.6.10"
+    libraryDependencies += "com.typesafe.play" %% "play-json" % "2.6.10",
+    libraryDependencies += "com.nrinaudo" %% "kantan.csv-generic" % "0.5.0"
   )
 
 // Uncomment the following for publishing to Sonatype.
