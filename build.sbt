@@ -8,7 +8,8 @@ ThisBuild / organizationName := "example"
 lazy val root = (project in file("."))
   .settings(
     name := "scala-project",
-    libraryDependencies += scalaTest % Test
+    libraryDependencies += scalaTest % Test,
+    libraryDependencies += "com.typesafe.play" %% "play-json" % "2.6.10"
   )
 
 // Uncomment the following for publishing to Sonatype.
