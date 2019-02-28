@@ -1,4 +1,5 @@
-import Dependencies._
+val scalaTest = "org.scalatest" %% "scalatest" % "3.0.5"
+val playJson  = "com.typesafe.play" %% "play-json" % "2.6.9"
 
 lazy val commonSettings = Seq(
   organization := "fr.epita",
@@ -23,32 +24,20 @@ lazy val commonSettings = Seq(
     )
   ),
   scalaVersion := "2.12.8",
-  libraryDependencies ++= Seq( /* common dependencies */ ),
-  scalaSource in Compile := baseDirectory.value / ".." / ".." / "src" / "main" / "scala",
-  scalaSource in Test    := baseDirectory.value / ".." / ".." / "src" / "test" / "scala"
 )
 
 lazy val emulator = (project in file("emulator"))
+  .settings(commonSettings)
   .settings(
-    commonSettings,
     name := "emulator",
     version := "0.0.1",
-    libraryDependencies += scalaTest % Test,
-    libraryDependencies += "com.typesafe.play" %% "play-json" % "2.6.10",
-    libraryDependencies += "com.nrinaudo" %% "kantan.csv-generic" % "0.5.0"
+    libraryDependencies ++= Seq(playJson),
+    libraryDependencies += scalaTest % Test
   )
 
 lazy val aggregator = (project in file("aggregator"))
+  .settings(commonSettings)
   .settings(
-    commonSettings,
     name := "aggregator",
     version := "0.0.1",
-    libraryDependencies += scalaTest % Test,
   )
-// ThisBuild / pomIncludeRepository := { _ => false }
-// ThisBuild / publishTo := {
-//   val nexus = "https://oss.sonatype.org/"
-//   if (isSnapshot.value) Some("snapshots" at nexus + "content/repositories/snapshots")
-//   else Some("releases" at nexus + "service/local/staging/deploy/maven2")
-// }
-// ThisBuild / publishMavenStyle := true
