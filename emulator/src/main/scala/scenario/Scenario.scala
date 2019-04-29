@@ -32,6 +32,7 @@ case class Scenario(val name: String, val interval: Int, val endpoint: String) {
     Try(Source.fromFile(name + ".json")).orElse(
     Try(Source.fromFile(name + ".csv"))
     ) match {
+      // TODO: add CSV support
       case Success(data) => this.processNextLine(data.getLines)
       case Failure(err) => println("Failed to load scenario file `" + name +"`: " + err)
     }

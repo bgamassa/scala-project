@@ -6,7 +6,10 @@ object Main {
         case Array("-scenario", s) => acc.copy(name = s)
         case Array("-interval", i) => acc.copy(interval = i.toInt)
         case Array("-endpoint", e) => acc.copy(endpoint = e)
-        case _ => acc // TODO: unknown arg -> print usage
+        case arg => {
+          println("error: '" + arg + "' unknown")
+          acc
+        }
       }
     }
 
