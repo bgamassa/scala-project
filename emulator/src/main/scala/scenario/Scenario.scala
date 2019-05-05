@@ -10,6 +10,7 @@ case class Scenario(val name: String, val interval: Int, val endpoint: String) {
   }
 
   def post(r: Row): Unit = {
+    // TODO: actually make the http POST requst at `endpoint` with `r` as payload
     println(r)
   }
 
@@ -40,6 +41,6 @@ case class Scenario(val name: String, val interval: Int, val endpoint: String) {
 }
 
 object Scenario {
-  def empty = new Scenario("default", 3, "http://localhost:3000/evt")
+  def empty = new Scenario("default", 3, "http://localhost:9000/data")
 }
 

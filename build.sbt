@@ -34,10 +34,3 @@ lazy val emulator = (project in file("emulator"))
     libraryDependencies ++= Seq(playJson),
     libraryDependencies += scalaTest % Test
   )
-
-lazy val aggregator = (project in file("aggregator"))
-  .settings(commonSettings)
-  .settings(
-    name := "aggregator",
-    version := "0.0.1",
-  )
