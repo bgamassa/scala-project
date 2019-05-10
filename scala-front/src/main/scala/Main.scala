@@ -4,6 +4,10 @@ import dom.ext.Ajax
 import scala.io.Source
 import java.net.URL
 import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.{Await, Future}
+import scala.concurrent.duration._
+import scala.io._
+import scala.util._
 
 object Main extends App {
     def appendPar(targetNode: dom.Node, text: String): Unit = {
@@ -13,21 +17,24 @@ object Main extends App {
     targetNode.appendChild(parNode)
   }
 
-  def getData() = {
-      var text = ""
+  def getData() : Unit = {
       val url =
         "http://localhost:9000/data"
-      Ajax.get(
-        url = url,
-        headers = Map(
-          "Content-type" -> "application/json",
-          "Access-Control-Allow-Origin" -> "http://localhost:5000",
-        )
-        ).foreach { case xhr =>
-        text = xhr.responseText
-      }
-      text
+      
+        Ajax.get(
+          url = url,
+          headers = Map(
+            "Content-type" -> "application/json",
+            "Access-Control-Allow-Origin" -> "http://localhost:5000",
+          )
+          ).onSuccess { case xhr =>
+          appendPar(document.body, xhr.responseText)
+        }
+
+      Thread.sleep(5000)
+      getData()
   }
 
-  appendPar(document.body, getData())
+  //appendPar(document.body, getData())
+  getData()
 }
