@@ -26,7 +26,7 @@ lazy val commonSettings = Seq(
   scalaVersion := "2.12.8",
 )
 
-lazy val emulator = (project in file("emulator"))
+lazy val emulator = (project in file("."))
   .settings(commonSettings)
   .settings(
     name := "emulator",
