@@ -7,6 +7,7 @@ import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.{Await, Future}
 import scala.concurrent.duration._
 import scala.io._
+import scala.scalajs.js.timers._
 import scala.util._
 
 object Main extends App {
@@ -20,7 +21,6 @@ object Main extends App {
   def getData() : Unit = {
       val url =
         "http://localhost:9000/data"
-      
         Ajax.get(
           url = url,
           headers = Map(
@@ -31,8 +31,7 @@ object Main extends App {
           appendPar(document.body, xhr.responseText)
         }
 
-      Thread.sleep(5000)
-      getData()
+    setTimeout(1000) { getData() }
   }
 
   //appendPar(document.body, getData())
