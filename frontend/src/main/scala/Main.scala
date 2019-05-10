@@ -31,7 +31,7 @@ object Main extends App {
           appendPar(document.body, xhr.responseText)
         }
 
-    setTimeout(1000) { getData() }
+    setTimeout(7000) { getData() }
   }
 
   //appendPar(document.body, getData())
