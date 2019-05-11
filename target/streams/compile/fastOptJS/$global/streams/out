@@ -1,0 +1,16 @@
+[0m[[0m[0minfo[0m] [0m[0mFast optimizing /home/beebee/Documents/SCIA/Scala/scala-project/frontend/target/scala-2.12/hello-world-fastopt.js[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 32197 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 15382 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mBasic Linking: 49148 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Batch mode: false[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Incremental part: 11559 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Optimizing 2 methods.[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: Optimizer part: 16890 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mInc. optimizer: 30955 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 19127 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 1674 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: 20974 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Class tree cache stats: reused: 501 -- invalidated: 3[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Method tree cache stats: resued: 695 -- invalidated: 1[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter (write output): 14721 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mGlobal IR cache stats: reused: 8 -- invalidated: 5 -- trees read: 3[0m
