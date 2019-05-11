@@ -27,8 +27,7 @@ object Main extends App {
     extra: String
   )
 
-    def appendPar(targetNode: dom.Node, text: String): Unit = {
-
+  def appendPar(targetNode: dom.Node, text: String): Unit = {
     val parNode = document.createElement("p")
     val textNode = document.createTextNode(text)
     parNode.appendChild(textNode)
@@ -36,8 +35,8 @@ object Main extends App {
   }
 
   def findMax[A](x: A, y: A) = {
-      if (x > y) x else y
-    }
+    if (x > y) x else y
+  }
 
   def JSONParse(targetNode: dom.Node, text: String) {
     JSON.parse(text).asInstanceOf[js.Array[js.Dynamic]].foreach{
@@ -52,10 +51,10 @@ object Main extends App {
   }
 
   def getData(targetNode: dom.Node, id: String) : Unit = {
-      val url = "http://scala-aggregator-api.eu-gb.mybluemix.net/data/all?reverse=true&minID=" + id
-      Ajax.get(url).onSuccess { case xhr =>
-       JSONParse(div, xhr.responseText)
-      }
+    val url = "http://scala-aggregator-api.eu-gb.mybluemix.net/data/all?reverse=true&minID=" + id
+    Ajax.get(url).onSuccess { case xhr =>
+      JSONParse(div, xhr.responseText)
+    }
   }
 
   val div = document.createElement("div")
