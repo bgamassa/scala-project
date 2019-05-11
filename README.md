@@ -43,4 +43,5 @@ javascript file using:
 cd frontend
 sbt fastOptJS
 ```
-Then serve the html static file as is and the data will be displayed
+Then serve the html static file as is and the data will be displayed and
+automatically updated
