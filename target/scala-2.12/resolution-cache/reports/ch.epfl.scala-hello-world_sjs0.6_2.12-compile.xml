@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="compile"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool, phantom-js-jetty"
-		date="20190511221857"/>
+		date="20190511222820"/>
 	<dependencies>
 		<module organisation="org.scala-js" name="scalajs-dom_sjs0.6_2.12">
 			<revision name="0.9.6" status="release" pubdate="20180520181345" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scala-js.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="7">

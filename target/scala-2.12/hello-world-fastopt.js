@@ -4324,7 +4324,7 @@ $c_LMain$.prototype.init___ = (function() {
   return this
 });
 $c_LMain$.prototype.getData__Lorg_scalajs_dom_raw_Node__I__V = (function(targetNode, id) {
-  var url = ("http://scala-aggregator-api.eu-gb.mybluemix.net/data/all?&minID=" + id);
+  var url = ("https://scala-aggregator-api.eu-gb.mybluemix.net/data/all?&minID=" + id);
   var this$3 = $m_Lorg_scalajs_dom_ext_Ajax$();
   var headers = $m_sci_Map$EmptyMap$();
   var this$4 = this$3.apply__T__T__Lorg_scalajs_dom_ext_Ajax$InputData__I__sci_Map__Z__T__s_concurrent_Future("GET", url, null, 0, headers, false, "");
