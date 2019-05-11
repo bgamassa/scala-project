@@ -21,6 +21,11 @@ cd aggrgator
 sbt run
 ```
 
+A build of the aggregator is currently *hosted in the Cloud* and uses an *SQL database*
+to store the data. This is the default POST endpoint of the emulator:
+`http://scala-aggregator-api.eu-gb.mybluemix.net/data/all`
+
+
 ### The emulator
 This is a program to emulate the behavior of an imaginary IoT device the sends
 out data every few seconds. The data is actually read from json or csv files in
@@ -37,7 +42,7 @@ sbt "run -interval 10 -scenario default -endpoint locahost:9000/data"
 ```
 
 ### The frontend
-The front end uses ScalaJS to query data from the aggrgator. You can build the
+The front end uses *ScalaJS* to query data from the aggrgator. You can build the
 javascript file using:
 ```bash
 cd frontend
