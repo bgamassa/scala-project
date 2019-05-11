@@ -28,7 +28,7 @@ object Main extends App {
   )
 
     def appendPar(targetNode: dom.Node, text: String): Unit = {
-    
+
     val parNode = document.createElement("p")
     val textNode = document.createTextNode(text)
     parNode.appendChild(textNode)
@@ -49,7 +49,7 @@ object Main extends App {
   }
 
   def getData(targetNode: dom.Node, id: String) : Unit = {
-      val url = "http://scala-aggregator-api.eu-gb.mybluemix.net/data/all?minID=" + id
+      val url = "http://scala-aggregator-api.eu-gb.mybluemix.net/data/all?reverse=true&minID=" + id
       Ajax.get(url).onSuccess { case xhr =>
        JSONParse(div, xhr.responseText)
       }
@@ -57,7 +57,7 @@ object Main extends App {
 
   val div = document.createElement("div")
   val h1Node = document.createElement("h1")
-  val h1value = document.createTextNode("Flux de données")
+  val h1value = document.createTextNode("Flux des dernières données")
 
   h1Node.appendChild(h1value)
   div.appendChild(h1Node)
