@@ -35,6 +35,10 @@ object Main extends App {
     targetNode.appendChild(parNode)
   }
 
+  def findMax[A](x: A, y: A) = {
+      if (x > y) x else y
+    }
+
   def JSONParse(targetNode: dom.Node, text: String) {
     JSON.parse(text).asInstanceOf[js.Array[js.Dynamic]].foreach{
       elt => appendPar(targetNode, "id : %s  - Date: %s - Gps_fix: %s - Latitude: %s - Longitude: %s ".format(
@@ -42,10 +46,9 @@ object Main extends App {
       + "Altitude: %s - Temperature: %s - Battery: %s - Extra: %s".format(elt.altitude, elt.temperature, elt.battery, elt.extra))
     }
 
-    val max = JSON.parse(text).asInstanceOf[js.Array[js.Dynamic]].reduceLeft ( _ max _ ).max
-    println(max)
+    val max = JSON.parse(text).asInstanceOf[js.Array[js.Dynamic]].map(e => e.id).reduceLeft(findMax)
 
-    setTimeout(10000) { getData(targetNode, max.toString()) }
+    setTimeout(10000) { getData(targetNode, max.toString) }
   }
 
   def getData(targetNode: dom.Node, id: String) : Unit = {
