@@ -10,9 +10,34 @@ import play.api.db._
 import play.api.libs.json._
 import java.sql._
 
-import play.api.libs.json.Json._
-import play.api.libs.json._
+import play.api.libs.functional.syntax._
 import java.text.SimpleDateFormat
+
+case class JSReport(
+  from: String,
+  date: String,
+  gps_fix: Int,
+  latitude: Float,
+  longitude: Float,
+  altitude: Float,
+  temperature: Float,
+  battery: Float,
+  extra: String
+)
+object JSReport {
+  implicit val rowFormat = Json.format[JSReport]
+  implicit val reportReads: Reads[JSReport] = (
+    (JsPath \ "from").read[String] and
+    (JsPath \ "date").read[String] and
+    (JsPath \ "gps_fix").read[Int] and
+    (JsPath \ "latitude").read[Float] and
+    (JsPath \ "longitude").read[Float] and
+    (JsPath \ "altitude").read[Float] and
+    (JsPath \ "temperature").read[Float] and
+    (JsPath \ "battery").read[Float] and
+    (JsPath \ "extra").read[String]
+  )(JSReport.apply _)
+}
 
 case class Report(
   id: Option[Int],
@@ -67,18 +92,8 @@ object Report {
 @Singleton
 class DataController @Inject()(cc: ControllerComponents, db: Database) extends AbstractController(cc) {
 
-  def getData = Action { implicit request: Request[AnyContent] =>
-    val conn = db.getConnection()
-
-    val reports: Seq[Report] = DB.autoClose(conn) { db =>
-      db.select("SELECT * FROM report", Report.parse _)
-    }
-
-    Ok(Json.toJson(reports))
-  }
-
   def postData = Action(parse.json) { implicit request: Request[JsValue] =>
-    val ins = request.body.as[Report]
+    val ins = request.body.as[JSReport]
 
     val conn = db.getConnection()
 
@@ -95,18 +110,41 @@ class DataController @Inject()(cc: ControllerComponents, db: Database) extends A
         battery,
         extra)
       VALUES (
-        ${ins.from getOrElse "" },
-        ${ins.date getOrElse (new Timestamp(System.currentTimeMillis / 1000)) },
-        ${ins.gps_fix getOrElse -2 },
-        ${ins.latitude getOrElse 0 },
-        ${ins.longitude getOrElse 0 },
-        ${ins.altitude getOrElse 0 },
-        ${ins.temperature getOrElse 0 },
-        ${ins.battery getOrElse 0 },
-        ${ins.extra getOrElse "" }
+        ${ins.from},
+        ${new Timestamp(ins.date.toFloat.toInt)},
+        ${ins.gps_fix},
+        ${ins.latitude},
+        ${ins.longitude},
+        ${ins.altitude},
+        ${ins.temperature},
+        ${ins.battery},
+        ${ins.extra}
       )""")
     }
 
     Ok("ok")
   }
+
+  def getData(minID: Int, from: String, reverse: Boolean, limit: Int) = Action { implicit request: Request[AnyContent] =>
+    val conn = db.getConnection()
+
+    val query = if (reverse)
+      sql"""SELECT * FROM report WHERE
+        id >= ${minID} AND
+        "from" LIKE ${from}
+        ORDER BY id DESC
+        LIMIT ${limit}"""
+      else sql"""SELECT * FROM report WHERE
+        id >= ${minID} AND
+        "from" LIKE ${from}
+        ORDER BY id ASC
+        LIMIT ${limit}"""
+
+    val reports: Seq[Report] = DB.autoClose(conn) { db =>
+      db.select(query, Report.parse _)
+    }
+
+    Ok(Json.toJson(reports))
+  }
+
 }
