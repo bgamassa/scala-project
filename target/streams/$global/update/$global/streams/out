@@ -2023,133 +2023,37 @@
 [0m[[0m[0mdebug[0m] [0m[0m:: downloading artifacts ::[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.typelevel#cats-core_2.12;1.6.0!cats-core_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-library;2.12.8!scala-library.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-js#scalajs-library_2.12;0.6.27!scalajs-library_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-js#scalajs-dom_sjs0.6_2.12;0.9.6!scalajs-dom_sjs0.6_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.typelevel#cats-macros_2.12;1.6.0!cats-macros_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-js#scalajs-library_2.12;0.6.27!scalajs-library_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.typelevel#cats-kernel_2.12;1.6.0!cats-kernel_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/beebee/.ivy2[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/beebee/.ivy2[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/beebee/.ivy2[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/beebee/.ivy2[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/beebee/.ivy2[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default ivy user dir defined: set to /home/beebee/.ivy2[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-public.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/beebee/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/beebee/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/beebee/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/beebee/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/beebee/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mno default cache defined: set to /home/beebee/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-local.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0mincluding url: jar:file:/home/beebee/.sbt/boot/scala-2.12.7/org.scala-sbt/sbt/1.2.8/ivy-2.3.0-sbt-cb9cc189e9f3af519f9f102e6c5d446488ff6832.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (26ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/beebee/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
-[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
-[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
-[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (27ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (27ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (27ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (27ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/beebee/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/beebee/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/beebee/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0msettings loaded (27ms)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/beebee/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default cache: /home/beebee/.ivy2/cache[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	default resolver: default[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	-- 5 resolvers:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	shared [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
-[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
-[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
-[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
-[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
-[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
-[0m[[0m[0mdebug[0m] [0m[0m	default [chain] [local, main][0m
-[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
-[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
-[0m[[0m[0mdebug[0m] [0m[0m	public [ibiblio][0m
-[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
-[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
-[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
-[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
-[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	main [chain] [shared, public][0m
-[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	local [file][0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.typelevel#machinist_2.12;0.6.6!machinist_2.12.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.8!scala-compiler.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-js#scalajs-compiler_2.12.8;0.6.27!scalajs-compiler_2.12.8.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-js#scalajs-test-interface_2.12;0.6.27!scalajs-test-interface_2.12.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-js#scalajs-compiler_2.12.8;0.6.27!scalajs-compiler_2.12.8.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.8!scala-compiler.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.typelevel#machinist_2.12;0.6.6!machinist_2.12.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.8!scala-reflect.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(bundle)[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] jline#jline;2.14.6!jline.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-websocket;8.1.16.v20140903!jetty-websocket.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-server;8.1.16.v20140903!jetty-server.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-util;8.1.16.v20140903!jetty-util.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-io;8.1.16.v20140903!jetty-io.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-http;8.1.16.v20140903!jetty-http.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016!javax.servlet.jar(orbit)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-http;8.1.16.v20140903!jetty-http.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	[NOT REQUIRED] org.eclipse.jetty#jetty-continuation;8.1.16.v20140903!jetty-continuation.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0m:: resolution report :: resolve 363ms :: artifacts dl 46ms[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 compile produced in /home/beebee/Documents/SCIA/Scala/scala-project/frontend/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-compile.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 runtime produced in /home/beebee/Documents/SCIA/Scala/scala-project/frontend/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-runtime.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 test produced in /home/beebee/Documents/SCIA/Scala/scala-project/frontend/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-test.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 provided produced in /home/beebee/Documents/SCIA/Scala/scala-project/frontend/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-provided.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 optional produced in /home/beebee/Documents/SCIA/Scala/scala-project/frontend/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-optional.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 compile-internal produced in /home/beebee/Documents/SCIA/Scala/scala-project/frontend/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-compile-internal.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 runtime-internal produced in /home/beebee/Documents/SCIA/Scala/scala-project/frontend/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-runtime-internal.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 test-internal produced in /home/beebee/Documents/SCIA/Scala/scala-project/frontend/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-test-internal.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 plugin produced in /home/beebee/Documents/SCIA/Scala/scala-project/frontend/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-plugin.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 pom produced in /home/beebee/Documents/SCIA/Scala/scala-project/frontend/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-pom.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 scala-tool produced in /home/beebee/Documents/SCIA/Scala/scala-project/frontend/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-scala-tool.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 phantom-js-jetty produced in /home/beebee/Documents/SCIA/Scala/scala-project/frontend/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-phantom-js-jetty.xml[0m
-[0m[[0m[0mdebug[0m] [0m[0m	resolve done (363ms resolve - 46ms download)[0m
+[0m[[0m[0mdebug[0m] [0m[0m:: resolution report :: resolve 132ms :: artifacts dl 3ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 compile produced in /home/beebee/Documents/SCIA/Scala/scala-project/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-compile.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 runtime produced in /home/beebee/Documents/SCIA/Scala/scala-project/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-runtime.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 test produced in /home/beebee/Documents/SCIA/Scala/scala-project/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-test.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 provided produced in /home/beebee/Documents/SCIA/Scala/scala-project/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-provided.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 optional produced in /home/beebee/Documents/SCIA/Scala/scala-project/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-optional.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 compile-internal produced in /home/beebee/Documents/SCIA/Scala/scala-project/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-compile-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 runtime-internal produced in /home/beebee/Documents/SCIA/Scala/scala-project/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-runtime-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 test-internal produced in /home/beebee/Documents/SCIA/Scala/scala-project/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-test-internal.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 plugin produced in /home/beebee/Documents/SCIA/Scala/scala-project/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-plugin.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 pom produced in /home/beebee/Documents/SCIA/Scala/scala-project/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-pom.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 scala-tool produced in /home/beebee/Documents/SCIA/Scala/scala-project/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-scala-tool.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	report for ch.epfl.scala#hello-world_sjs0.6_2.12;1.0 phantom-js-jetty produced in /home/beebee/Documents/SCIA/Scala/scala-project/target/scala-2.12/resolution-cache/reports/ch.epfl.scala-hello-world_sjs0.6_2.12-phantom-js-jetty.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	resolve done (132ms resolve - 3ms download)[0m
 [0m[[0m[0minfo[0m] [0m[0mDone updating.[0m
 [0m[[0m[33mwarn[0m] [0m[0mThere may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.[0m
