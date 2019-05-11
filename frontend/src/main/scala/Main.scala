@@ -45,7 +45,7 @@ object Main extends App {
   }
 
   def getData(targetNode: dom.Node, id: Int) : Unit = {
-    val url = "http://scala-aggregator-api.eu-gb.mybluemix.net/data/all?&minID=" + id
+    val url = "https://scala-aggregator-api.eu-gb.mybluemix.net/data/all?&minID=" + id
     Ajax.get(url).onSuccess { case xhr =>
       JSONParse(div, xhr.responseText, id)
     }
