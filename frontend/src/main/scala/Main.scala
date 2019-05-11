@@ -34,26 +34,20 @@ object Main extends App {
     targetNode.appendChild(parNode)
   }
 
-  def findMax[A](x: A, y: A) = {
-    if (x > y) x else y
-  }
-
-  def JSONParse(targetNode: dom.Node, text: String) {
+  def JSONParse(targetNode: dom.Node, text: String, id: Int) {
     JSON.parse(text).asInstanceOf[js.Array[js.Dynamic]].foreach{
       elt => appendPar(targetNode, "id : %s  - Date: %s - Gps_fix: %s - Latitude: %s - Longitude: %s ".format(
         elt.id, elt.date, elt.gps_fix, elt.latitude, elt.longitude)
       + "Altitude: %s - Temperature: %s - Battery: %s - Extra: %s".format(elt.altitude, elt.temperature, elt.battery, elt.extra))
     }
 
-    val max = JSON.parse(text).asInstanceOf[js.Array[js.Dynamic]].map(e => e.id).reduceLeft(findMax)
-
-    setTimeout(10000) { getData(targetNode, max.toString) }
+    setTimeout(10000) { getData(targetNode, id + 50) }
   }
 
-  def getData(targetNode: dom.Node, id: String) : Unit = {
-    val url = "http://scala-aggregator-api.eu-gb.mybluemix.net/data/all?reverse=true&minID=" + id
+  def getData(targetNode: dom.Node, id: Int) : Unit = {
+    val url = "http://scala-aggregator-api.eu-gb.mybluemix.net/data/all?&minID=" + id
     Ajax.get(url).onSuccess { case xhr =>
-      JSONParse(div, xhr.responseText)
+      JSONParse(div, xhr.responseText, id)
     }
   }
 
@@ -64,5 +58,5 @@ object Main extends App {
   h1Node.appendChild(h1value)
   div.appendChild(h1Node)
   document.body.appendChild(div)
-  getData(div, "1")
+  getData(div, 1)
 }
