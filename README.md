@@ -49,4 +49,4 @@ cd frontend
 sbt fastOptJS
 ```
 Then serve the html static file as is and the data will be displayed and
-automatically updated
+automatically updated or you can also visit this link: `https://bgamassa.github.io/scala-project/` which is the deployed version of the front-end.
