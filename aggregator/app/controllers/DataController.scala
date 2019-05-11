@@ -147,4 +147,18 @@ class DataController @Inject()(cc: ControllerComponents, db: Database) extends A
     Ok(Json.toJson(reports))
   }
 
+  def getActors = Action { implicit request: Request[AnyContent] =>
+    val conn = db.getConnection()
+
+    val query = sql"""SELECT DISTINCT "from" FROM report"""
+
+    val reports: Seq[String] = DB.autoClose(conn) { db =>
+      db.select(query) { rs =>
+        rs.getString("from")
+      }
+    }
+
+    Ok(Json.toJson(reports))
+  }
+
 }
