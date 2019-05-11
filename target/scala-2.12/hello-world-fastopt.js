@@ -4332,6 +4332,9 @@ $c_LMain$.prototype.getData__Lorg_scalajs_dom_raw_Node__I__V = (function(targetN
   var executor = $m_s_concurrent_ExecutionContext$Implicits$().global__s_concurrent_ExecutionContext();
   $f_s_concurrent_Future__onSuccess__s_PartialFunction__s_concurrent_ExecutionContext__V(this$4, pf, executor)
 });
+$c_LMain$.prototype.main__AT__V = (function(args) {
+  $f_s_App__main__AT__V(this, args)
+});
 $c_LMain$.prototype.JSONParse__Lorg_scalajs_dom_raw_Node__T__I__V = (function(targetNode, text, id) {
   var array = $g.JSON.parse(text);
   var i = 0;
@@ -4427,9 +4430,6 @@ $c_LMain$.prototype.JSONParse__Lorg_scalajs_dom_raw_Node__T__I__V = (function(ta
       $m_LMain$().getData__Lorg_scalajs_dom_raw_Node__I__V(targetNode$1, ((50 + id$1) | 0))
     })
   })(this, targetNode, id)))
-});
-$c_LMain$.prototype.main__AT__V = (function(args) {
-  $f_s_App__main__AT__V(this, args)
 });
 $c_LMain$.prototype.appendPar__Lorg_scalajs_dom_raw_Node__T__V = (function(targetNode, text) {
   var parNode = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createElement("p");
