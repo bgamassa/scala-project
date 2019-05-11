@@ -4,11 +4,17 @@
 This is the HTTP REST API that receives the data from all IoT devices and
 stores it in a database. This API exposes 2 endpoints:
   - `POST /data` to push data in the database
-  - `GET /data` to download all the data stored
+  - `GET /data/all` returns the data stored. It taked the following optionale
+  parameters:
+    * minID: Int ?= 0             # Minmal message ID to return
+    * from: String ?= "%"         # Only return messages match this expression
+    * reverse: Boolean ?= false   # Reverse the order of messages (before limiting)
+    * limit: Int ?= 50            # Limit the number of messages to return
+  - `GET /actors` returns all the data authors
 
 This is how to start the aggregator API
 ```bash
-cd aggrgator-api
+cd aggrgator
 sbt run
 ```
 
@@ -19,7 +25,7 @@ the current directory.
 
 This is how to start an emulator
 ```bash
-sbt "emulator/run -interval 10 -scenario default -endpoint locahost:9000/data"
+sbt "run -interval 10 -scenario default -endpoint locahost:9000/data"
 ```
 
 ### The frontend
