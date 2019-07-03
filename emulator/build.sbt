@@ -26,11 +26,13 @@ lazy val commonSettings = Seq(
   scalaVersion := "2.12.8",
 )
 
-lazy val emulator = (project in file("emulator"))
+lazy val emulator = (project in file("."))
   .settings(commonSettings)
   .settings(
     name := "emulator",
     version := "0.0.1",
-    libraryDependencies ++= Seq(playJson),
-    libraryDependencies += scalaTest % Test
+    libraryDependencies += playJson,
+    libraryDependencies += scalaTest % Test,
+    libraryDependencies += "org.scalaj" %% "scalaj-http" % "2.4.1",
+    libraryDependencies += "com.github.tototoshi" %% "scala-csv" % "1.3.5"
   )
