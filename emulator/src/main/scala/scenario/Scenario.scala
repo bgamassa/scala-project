@@ -16,6 +16,9 @@ case class Scenario(val name: String, val interval: Int, val endpoint: String) {
     altitude: Float,
     temperature: Float,
     battery: Float,
+    happiness_level: Int,
+    anger_level: Int,
+    stress_level: Int,
     extra: String
   )
   object Report {
@@ -28,6 +31,9 @@ case class Scenario(val name: String, val interval: Int, val endpoint: String) {
       (JsPath \ "altitude").read[Float] and
       (JsPath \ "temperature").read[Float] and
       (JsPath \ "battery").read[Float] and
+      (JsPath \ "happiness_level").read[Int] and
+      (JsPath \ "anger_level").read[Int] and
+      (JsPath \ "stress_level").read[Int] and
       (JsPath \ "extra").read[String]
     )(Report.apply _)
   }
@@ -76,6 +82,9 @@ case class Scenario(val name: String, val interval: Int, val endpoint: String) {
         raw("altitude").toFloat,
         raw("temperature").toFloat,
         raw("battery").toFloat,
+        raw("happiness_level").toInt,
+        raw("anger_level").toInt,
+        raw("stress_level").toInt,
         raw("extra")
       )
       this.post(r)

@@ -9,6 +9,9 @@ CREATE TABLE public.report (
 	altitude float,
 	temperature smallint,
 	battery smallint,
+	happiness_level smallint,
+	anger_level smallint,
+	stress_level smallint,
 	extra text,
 	CONSTRAINT report_pk PRIMARY KEY (id)
 

@@ -22,6 +22,9 @@ case class JSReport(
   altitude: Float,
   temperature: Float,
   battery: Float,
+  happiness_level: Int,
+  anger_level: Int,
+  stress_level: Int,
   extra: String
 )
 object JSReport {
@@ -35,7 +38,10 @@ object JSReport {
     (JsPath \ "altitude").read[Float] and
     (JsPath \ "temperature").read[Float] and
     (JsPath \ "battery").read[Float] and
-    (JsPath \ "extra").read[String]
+    (JsPath \ "happiness_level").read[Int] and
+    (JsPath \ "anger_level").read[Int] and
+    (JsPath \ "stress_level").read[Int] and
+    (JsPath \ "extra").read[String] 
   )(JSReport.apply _)
 }
 
@@ -49,6 +55,9 @@ case class Report(
   altitude: Option[Float],
   temperature: Option[Int],
   battery: Option[Int],
+  happiness_level: Option[Int],
+  anger_level: Option[Int],
+  stress_level: Option[Int],
   extra: Option[String]
 )
 
@@ -73,6 +82,9 @@ object Report {
     altitude: Float,
     temperature: Int,
     battery: Int,
+    happiness_level: Int,
+    anger_level: Int,
+    stress_level: Int,
     extra: String): Report = {
       new Report(
         Some(id),
@@ -84,6 +96,9 @@ object Report {
         Some(altitude),
         Some(temperature),
         Some(battery),
+        Some(happiness_level),
+        Some(anger_level),
+        Some(stress_level),
         Some(extra)
       )
   }
@@ -108,6 +123,9 @@ class DataController @Inject()(cc: ControllerComponents, db: Database) extends A
         altitude,
         temperature,
         battery,
+        happiness_level,
+        anger_level,
+        stress_level,
         extra)
       VALUES (
         ${ins.from},
@@ -118,6 +136,9 @@ class DataController @Inject()(cc: ControllerComponents, db: Database) extends A
         ${ins.altitude},
         ${ins.temperature},
         ${ins.battery},
+        ${ins.happiness_level},
+        ${ins.anger_level},
+        ${ins.stress_level},
         ${ins.extra}
       )""")
     }
