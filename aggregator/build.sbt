@@ -14,3 +14,4 @@ libraryDependencies += "org.postgresql" % "postgresql" % "42.2.5"
 libraryDependencies += "com.github.takezoe" %% "scala-jdbc" % "1.0.5"
 libraryDependencies += filters
 libraryDependencies += "com.typesafe.play" %% "play-json" % "2.7.2"
+libraryDependencies += "org.apache.kafka" %% "kafka" % "2.1.0"
