@@ -13,9 +13,9 @@ class StreamsProcessor(brokers: String) {
     user: String
   )
   
-  implicit val BrainImplentFormat = Json.format[Tweet]
+  implicit val BrainImplentFormat = Json.format[BrainImplent]
 
-  def JsontoBrainImplent(json: String) = Json.parse(json).validate[Tweet] match {
+  def JsontoBrainImplent(json: String) = Json.parse(json).validate[BrainImplent] match {
     case JsError(e) => println(e); None
     case JsSuccess(t, _) => Some(t)
   }
