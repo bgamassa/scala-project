@@ -110,7 +110,7 @@ object Report {
 @Singleton
 class DataController @Inject()(cc: ControllerComponents, db: Database) extends AbstractController(cc) {
 
-  def writeToKafka(topic: String, msg: Report): Unit = {
+  def writeToKafka(topic: String, msg: JSReport): Unit = {
     val jsonString = Json.stringify(Json.toJson(msg))
     val props = new Properties()
     props.put("bootstrap.servers", "localhost:9092")
@@ -128,9 +128,9 @@ class DataController @Inject()(cc: ControllerComponents, db: Database) extends A
   def postData = Action(parse.json) { implicit request: Request[JsValue] =>
     val ins = request.body.as[JSReport]
 
-    val conn = db.getConnection()
+    //val conn = db.getConnection()
 
-    val res: Seq[Report] = DB.autoClose(conn) { db =>
+    /*val res: Seq[Report] = DB.autoClose(conn) { db =>
       db.select(sql"""
       INSERT INTO report (
         "from",
@@ -159,10 +159,10 @@ class DataController @Inject()(cc: ControllerComponents, db: Database) extends A
         ${ins.stress_level},
         ${ins.extra}
       ) RETURNING *""", Report.parse _)
-    }
+    }*/
 
-    println(Json.stringify(Json.toJson(res)))
-    res.foreach(r => writeToKafka("test", r))
+    println(Json.stringify(Json.toJson(ins)))
+    writeToKafka("test", ins)
 
     Ok("ok")
   }
