@@ -52,6 +52,7 @@ class Producer {
 
 object Producer {  
   def main(args: Array[String]): Unit = {
+    println("This is a test")
     new Producer().writeToKafka("test")
   }
 }

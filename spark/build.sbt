@@ -12,5 +12,7 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-mllib" % sparkVersion,
   "org.apache.spark" %% "spark-streaming" % sparkVersion,
   "org.apache.spark" %% "spark-hive" % sparkVersion,
-  "com.typesafe.play" %% "play-json" % "2.4.0"
+  "org.apache.spark" %% "spark-streaming-kafka-0-10" % sparkVersion,
+  "org.apache.kafka" %% "kafka" % "2.2.0",
+  "com.typesafe.play" %% "play-json" % "2.4.0",
 )

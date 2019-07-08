@@ -13,6 +13,9 @@ import java.sql._
 import play.api.libs.functional.syntax._
 import java.text.SimpleDateFormat
 
+import java.util.Properties
+import org.apache.kafka.clients.producer._
+
 case class JSReport(
   from: String,
   date: String,
@@ -107,13 +110,28 @@ object Report {
 @Singleton
 class DataController @Inject()(cc: ControllerComponents, db: Database) extends AbstractController(cc) {
 
+  def writeToKafka(topic: String, msg: JSReport): Unit = {
+    val jsonString = Json.stringify(Json.toJson(msg))
+    val props = new Properties()
+    props.put("bootstrap.servers", "localhost:9092")
+    props.put("client.id", "ScalaProducerExample")
+    props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer")
+    props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer")
+    props.put("auto.create.topics.enable", "true")
+    val producer = new KafkaProducer[String, String](props)
+    val record = new ProducerRecord[String, String](topic, jsonString)
+    producer.send(record)
+    producer.close()
+  }
+
+
   def postData = Action(parse.json) { implicit request: Request[JsValue] =>
     val ins = request.body.as[JSReport]
 
-    val conn = db.getConnection()
+    //val conn = db.getConnection()
 
-    val res = DB.autoClose(conn) { db =>
-      db.update(sql"""
+    /*val res: Seq[Report] = DB.autoClose(conn) { db =>
+      db.select(sql"""
       INSERT INTO report (
         "from",
         date,
@@ -140,8 +158,11 @@ class DataController @Inject()(cc: ControllerComponents, db: Database) extends A
         ${ins.anger_level},
         ${ins.stress_level},
         ${ins.extra}
-      )""")
-    }
+      ) RETURNING *""", Report.parse _)
+    }*/
+
+    println(Json.stringify(Json.toJson(ins)))
+    writeToKafka("test", ins)
 
     Ok("ok")
   }
