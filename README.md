@@ -50,3 +50,23 @@ sbt fastOptJS
 ```
 Then serve the html static file as is and the data will be displayed and
 automatically updated or you can also visit this link: `https://bgamassa.github.io/scala-project/` which is the deployed version of the front-end.
+
+### Cassandra
+We will use the dockerized version of cassandra just for the demo purpuse.
+```bash
+sudo docker run --rm -it --name cassandra0 \
+  -p 9042:9042 -p 9160:9160 -p 7199:7199 -p 8778:9778 \
+  -e CASSANDRA_START_RPC=true \
+  -e CASSANDRA_CLUSTER_NAME=brain_implent_cluster \
+  -v $(pwd)/schema.cql:/schema.cql \
+  cassandra:3.11.1
+```
+
+Then to initialize the database, this command should be exectuted. It can also
+be used to reset the database.
+
+```bash
+docker exec cassandra0 cqlsh -f schema.cql
+```
+
+
