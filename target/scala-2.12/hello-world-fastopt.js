@@ -4324,10 +4324,9 @@ $c_LMain$.prototype.init___ = (function() {
   return this
 });
 $c_LMain$.prototype.getData__Lorg_scalajs_dom_raw_Node__I__V = (function(targetNode, id) {
-  var url = ("https://scala-aggregator-api.eu-gb.mybluemix.net/data/all?&minID=" + id);
   var this$3 = $m_Lorg_scalajs_dom_ext_Ajax$();
   var headers = $m_sci_Map$EmptyMap$();
-  var this$4 = this$3.apply__T__T__Lorg_scalajs_dom_ext_Ajax$InputData__I__sci_Map__Z__T__s_concurrent_Future("GET", url, null, 0, headers, false, "");
+  var this$4 = this$3.apply__T__T__Lorg_scalajs_dom_ext_Ajax$InputData__I__sci_Map__Z__T__s_concurrent_Future("GET", "https://scala-aggregator-api.eu-gb.mybluemix.net/data/all?&reverse=true&limit=50", null, 0, headers, false, "");
   var pf = new $c_LMain$$anonfun$getData$1().init___I(id);
   var executor = $m_s_concurrent_ExecutionContext$Implicits$().global__s_concurrent_ExecutionContext();
   $f_s_concurrent_Future__onSuccess__s_PartialFunction__s_concurrent_ExecutionContext__V(this$4, pf, executor)
@@ -4342,10 +4341,10 @@ $c_LMain$.prototype.JSONParse__Lorg_scalajs_dom_raw_Node__T__I__V = (function(ta
   while ((i < len)) {
     var index = i;
     var arg1 = array[index];
-    var jsx$6 = $m_LMain$();
+    var jsx$9 = $m_LMain$();
     var this$5 = new $c_sci_StringOps().init___T("id : %s  - Date: %s - Gps_fix: %s - Latitude: %s - Longitude: %s ");
     var array$1 = [arg1.id, arg1.date, arg1.gps_fix, arg1.latitude, arg1.longitude];
-    var jsx$5 = $m_sjsr_RuntimeString$();
+    var jsx$8 = $m_sjsr_RuntimeString$();
     var $$this = this$5.repr$1;
     $m_sc_Seq$();
     $m_sjs_js_WrappedArray$();
@@ -4376,16 +4375,16 @@ $c_LMain$.prototype.JSONParse__Lorg_scalajs_dom_raw_Node__T__I__V = (function(ta
     var that = result.u.length;
     var end = ((x$1 < that) ? x$1 : that);
     while ((i$2 < end)) {
-      var jsx$4 = j;
+      var jsx$7 = j;
       var index$2 = i$2;
-      result.set(jsx$4, array$2[index$2]);
+      result.set(jsx$7, array$2[index$2]);
       i$2 = ((1 + i$2) | 0);
       j = ((1 + j) | 0)
     };
-    var jsx$3 = jsx$5.format__T__AO__T($$this, result);
-    var this$22 = new $c_sci_StringOps().init___T("Altitude: %s - Temperature: %s - Battery: %s - Extra: %s");
-    var array$3 = [arg1.altitude, arg1.temperature, arg1.battery, arg1.extra];
-    var jsx$2 = $m_sjsr_RuntimeString$();
+    var jsx$6 = jsx$8.format__T__AO__T($$this, result);
+    var this$22 = new $c_sci_StringOps().init___T("Altitude: %s - Temperature: %s - Battery: %s - Happiness Level: %s ");
+    var array$3 = [arg1.altitude, arg1.temperature, arg1.battery, arg1.happiness_level];
+    var jsx$5 = $m_sjsr_RuntimeString$();
     var $$this$1 = this$22.repr$1;
     $m_sc_Seq$();
     $m_sjs_js_WrappedArray$();
@@ -4416,13 +4415,53 @@ $c_LMain$.prototype.JSONParse__Lorg_scalajs_dom_raw_Node__T__I__V = (function(ta
     var that$1 = result$1.u.length;
     var end$1 = ((x$3 < that$1) ? x$3 : that$1);
     while ((i$4 < end$1)) {
-      var jsx$1 = j$1;
+      var jsx$4 = j$1;
       var index$4 = i$4;
-      result$1.set(jsx$1, array$4[index$4]);
+      result$1.set(jsx$4, array$4[index$4]);
       i$4 = ((1 + i$4) | 0);
       j$1 = ((1 + j$1) | 0)
     };
-    jsx$6.appendPar__Lorg_scalajs_dom_raw_Node__T__V(targetNode, (("" + jsx$3) + jsx$2.format__T__AO__T($$this$1, result$1)));
+    var jsx$3 = jsx$5.format__T__AO__T($$this$1, result$1);
+    var this$39 = new $c_sci_StringOps().init___T("Anger Level: %s - Stress Level: %s - Extra: %s");
+    var array$5 = [arg1.anger_level, arg1.stress_level, arg1.extra];
+    var jsx$2 = $m_sjsr_RuntimeString$();
+    var $$this$2 = this$39.repr$1;
+    $m_sc_Seq$();
+    $m_sjs_js_WrappedArray$();
+    var array$6 = [];
+    var x1$2 = $uI(array$5.length);
+    switch (x1$2) {
+      case (-1): {
+        break
+      }
+    };
+    var i$5 = 0;
+    var len$7 = $uI(array$5.length);
+    while ((i$5 < len$7)) {
+      var index$5 = i$5;
+      var arg1$3 = array$5[index$5];
+      var elem$2 = $f_sci_StringLike__unwrapArg__psci_StringLike__O__O(this$39, arg1$3);
+      array$6.push(elem$2);
+      i$5 = ((1 + i$5) | 0)
+    };
+    $m_s_reflect_ManifestFactory$ObjectManifest$();
+    var len$8 = $uI(array$6.length);
+    var result$2 = $newArrayObject($d_O.getArrayOf(), [len$8]);
+    var len$9 = result$2.u.length;
+    var i$6 = 0;
+    var j$2 = 0;
+    var x$4 = $uI(array$6.length);
+    var x$5 = ((x$4 < len$9) ? x$4 : len$9);
+    var that$2 = result$2.u.length;
+    var end$2 = ((x$5 < that$2) ? x$5 : that$2);
+    while ((i$6 < end$2)) {
+      var jsx$1 = j$2;
+      var index$6 = i$6;
+      result$2.set(jsx$1, array$6[index$6]);
+      i$6 = ((1 + i$6) | 0);
+      j$2 = ((1 + j$2) | 0)
+    };
+    jsx$9.appendPar__Lorg_scalajs_dom_raw_Node__T__V(targetNode, ((("" + jsx$6) + jsx$3) + jsx$2.format__T__AO__T($$this$2, result$2)));
     i = ((1 + i) | 0)
   };
   $m_sjs_js_timers_package$().setTimeout__D__F0__sjs_js_timers_SetTimeoutHandle(10000.0, new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function(this$2$1, targetNode$1, id$1) {
